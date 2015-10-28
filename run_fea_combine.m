@@ -8,11 +8,11 @@ for fnum = 10:10:10
     param{1}.kernelDim =5;
     param{1}.pooldim = 2;
     param{1}.C = 1e6;
-    param{1}.hiddenNum =6^3;%必须是整数的立方，表示每个featuremap做AE时隐层节点的数目
+    param{1}.hiddenNum =6^3;%蹇呴』鏄暣鏁扮殑绔嬫柟锛岃〃绀烘瘡涓猣eaturemap鍋欰E鏃堕殣灞傝妭鐐圭殑鏁扮洰
     param{1}.Actfunc = 'sig';
     C = 0.1;
     fprintf('funm=%d, C = %d\n',fnum,C);
-    %CAE_ELM_voxel;
+    CAE_ELM_voxel;
     CAE_ELM_combine;
 end
 % for fnum = 10:10:100
@@ -22,7 +22,7 @@ end
 %     param{1}.kernelDim =5;
 %     param{1}.pooldim = 2;
 %     param{1}.C = 1e8;
-%     param{1}.hiddenNum =6^3;%必须是整数的立方，表示每个featuremap做AE时隐层节点的数目
+%     param{1}.hiddenNum =6^3;%蹇呴』鏄暣鏁扮殑绔嬫柟锛岃〃绀烘瘡涓猣eaturemap鍋欰E鏃堕殣灞傝妭鐐圭殑鏁扮洰
 %     param{1}.Actfunc = 'sig';
 %     C = 0.1;
 %     fprintf('funm=%d, C = %d\n',fnum,C);
@@ -34,7 +34,7 @@ end
 %     param{1}.kernelDim =5;
 %     param{1}.pooldim = 2;
 %     param{1}.C = 1e8;
-%     param{1}.hiddenNum =6^3;%必须是整数的立方，表示每个featuremap做AE时隐层节点的数目
+%     param{1}.hiddenNum =6^3;%蹇呴』鏄暣鏁扮殑绔嬫柟锛岃〃绀烘瘡涓猣eaturemap鍋欰E鏃堕殣灞傝妭鐐圭殑鏁扮洰
 %     param{1}.Actfunc = 'sig';
 %     C = 1;
 %     fprintf('funm=%d, C = %d\n',fnum,C);
